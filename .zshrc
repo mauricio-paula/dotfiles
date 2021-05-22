@@ -54,3 +54,7 @@ source $ZSH/oh-my-zsh.sh
 eval "$(starship init zsh)"
 
 colorscript random
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/doom/.sdkman"
+[[ -s "/home/doom/.sdkman/bin/sdkman-init.sh" ]] && source "/home/doom/.sdkman/bin/sdkman-init.sh"
